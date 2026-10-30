@@ -1,0 +1,440 @@
+
+/* GENERAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #202020;
+}
+
+:root {
+    --primary: #d97757;
+    --dark: #202020;
+    --light: #f7f5f2;
+}
+
+/* TOP BAR */
+
+.topbar {
+    background: #202020;
+    color: white;
+    padding: 9px;
+    font-size: 13px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    color: #202020;
+}
+
+.nav-link {
+    margin: 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 20px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#cart {
+    background: var(--primary);
+    color: white;
+    font-size: 11px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: var(--light);
+    padding: 65px 0;
+}
+
+.hero .row {
+    min-height: 450px;
+}
+
+.hero h6 {
+    color: var(--primary);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    color: #777;
+    line-height: 1.8;
+    max-width: 430px;
+    margin-bottom: 25px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 150px 150px 12px 12px;
+}
+
+/* FEATURES */
+
+.features {
+    border-bottom: 1px solid #eee;
+}
+
+.features i {
+    color: var(--primary);
+    font-size: 28px;
+}
+
+.features h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.features p {
+    color: #888;
+    font-size: 12px;
+}
+
+/* COMMON SECTION */
+
+.section {
+    padding: 80px 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h6 {
+    color: var(--primary);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.heading h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* CATEGORIES */
+
+.category {
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.category:hover img {
+    transform: scale(1.08);
+}
+
+.category h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+/* PRODUCTS */
+
+.products {
+    background: #faf9f7;
+}
+
+.product-card {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info small {
+    color: #888;
+}
+
+.product-info h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.product-info strong {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product-info button {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background: #202020;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.product-info button:hover {
+    background: var(--primary);
+}
+
+/* OFFER SECTION */
+
+.offer {
+    padding: 85px 0;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.25)),
+        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1500")
+        center/cover;
+}
+
+.offer h6 {
+    color: #e9a68d;
+    letter-spacing: 2px;
+}
+
+.offer h2 {
+    font-size: 55px;
+    font-weight: 800;
+    margin: 15px 0;
+}
+
+.offer p {
+    margin-bottom: 25px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background: var(--light);
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.newsletter p {
+    color: #777;
+}
+
+.newsletter form {
+    display: flex;
+    max-width: 480px;
+    gap: 10px;
+    margin: 25px auto;
+}
+
+.newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 18px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 0 22px;
+    border: none;
+    border-radius: 30px;
+    background: #202020;
+    color: white;
+}
+
+.newsletter button:hover {
+    background: var(--primary);
+}
+
+#message {
+    color: green;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 55px 0 20px;
+    background: #202020;
+    color: white;
+}
+
+footer h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer h5 {
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+footer p,
+footer a {
+    color: #bbb;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer hr {
+    border-color: #666;
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 991px) {
+    .hero-img {
+        height: 380px;
+        margin-top: 30px;
+    }
+
+    .icons {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .category {
+        height: 180px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-info h5 {
+        font-size: 12px;
+    }
+
+    .product-info button {
+        font-size: 11px;
+    }
+
+    .offer h2 {
+        font-size: 42px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter button {
+        padding: 13px;
+    }
+}
